@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="public, max-age=31536000">
+<title>GeoDinâmicas - +750 Dinâmicas de Geografia</title>
+<meta name="description" content="O material mais completo para professores de geografia do Brasil.">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="16x16">
+<link rel="preconnect" href="https://i.ibb.co">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;color:#1A1A1A;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+button{cursor:pointer;font-family:'Poppins',sans-serif;border:none;outline:none}
+a{text-decoration:none}ul{list-style:none}
+.flex{display:flex}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}
+.items-center{align-items:center}.items-start{align-items:flex-start}.justify-center{justify-content:center}.justify-between{justify-content:space-between}
+.gap-1{gap:4px}.gap-2{gap:8px}.gap-3{gap:12px}.gap-4{gap:16px}.gap-8{gap:32px}.gap-10{gap:40px}.gap-20{gap:80px}
+.grid{display:grid}.text-center{text-align:center}.text-left{text-align:left}
+.w-full{width:100%}.min-h-screen{min-height:100vh}.h-full{height:100%}
+.relative{position:relative}.absolute{position:absolute}.overflow-hidden{overflow:hidden}.overflow-x-hidden{overflow-x:hidden}
+.overflow-visible{overflow:visible}
+.inline-flex{display:inline-flex}.inline-block{display:inline-block}.block{display:block}.hidden{display:none}
+.font-medium{font-weight:500}.font-bold{font-weight:700}.font-black{font-weight:900}
+.uppercase{text-transform:uppercase}.tracking-tight{letter-spacing:-0.025em}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}
+.rounded-full{border-radius:9999px}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}
+.border{border-width:1px}.border-none{border:none}
+.shadow-lg{box-shadow:0 10px 15px -3px rgba(0,0,0,.1)}
+.shadow-xl{box-shadow:0 20px 25px -5px rgba(0,0,0,.1)}
+.transition-all{transition:all .15s ease}.transition-transform{transition:transform .15s ease}.transition-colors{transition:color .15s}
+.shrink-0{flex-shrink:0}
+.mx-auto{margin-left:auto;margin-right:auto}.mt-auto{margin-top:auto}
+.pt-2{padding-top:8px}.pt-4{padding-top:16px}.pt-8{padding-top:32px}
+.mb-1{margin-bottom:4px}.mb-2{margin-bottom:8px}.mb-4{margin-bottom:16px}.mb-6{margin-bottom:24px}.mb-8{margin-bottom:32px}.mb-10{margin-bottom:40px}.mb-16{margin-bottom:64px}
+.mt-1{margin-top:4px}.mt-2{margin-top:8px}.mt-6{margin-top:24px}.mt-8{margin-top:32px}.mt-10{margin-top:40px}.mt-12{margin-top:48px}.mt-16{margin-top:64px}
+.p-5{padding:20px}.p-6{padding:24px}.p-8{padding:32px}.p-10{padding:40px}.p-12{padding:48px}.p-0{padding:0}
+.px-4{padding-left:16px;padding-right:16px}.px-6{padding-left:24px;padding-right:24px}.px-8{padding-left:32px;padding-right:32px}.px-12{padding-left:48px;padding-right:48px}.px-16{padding-left:64px;padding-right:64px}.px-1\.5{padding-left:6px;padding-right:6px}
+.py-0\.5{padding-top:2px;padding-bottom:2px}.py-1\.5{padding-top:6px;padding-bottom:6px}.py-2{padding-top:8px;padding-bottom:8px}.py-3{padding-top:12px;padding-bottom:12px}.py-4{padding-top:16px;padding-bottom:16px}.py-5{padding-top:20px;padding-bottom:20px}.py-6{padding-top:24px;padding-bottom:24px}.py-8{padding-top:32px;padding-bottom:32px}.py-10{padding-top:40px;padding-bottom:40px}.py-16{padding-top:64px;padding-bottom:64px}.py-24{padding-top:96px;padding-bottom:96px}
+.space-y-4>*+*{margin-top:16px}.space-y-1\.5>*+*{margin-top:6px}.space-y-6>*+*{margin-top:24px}.space-y-10>*+*{margin-top:40px}.space-y-12>*+*{margin-top:48px}
+.z-30{z-index:30}.-z-10{z-index:-1}.z-2{z-index:2}.inset-0{inset:0}
+.left-0{left:0}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}
+.bottom-1{bottom:4px}
+.-top-3{top:-12px}.-right-3{right:-12px}.-top-4{top:-16px}.left-1\/2{left:50%}
+.w-1{width:4px}.w-4{width:16px}.w-5{width:20px}.w-6{width:24px}.w-10{width:40px}.w-12{width:48px}.w-14{width:56px}.w-16{width:64px}.w-20{width:80px}
+.h-1{height:4px}.h-2{height:8px}.h-4{height:16px}.h-5{height:20px}.h-6{height:24px}.h-10{height:40px}.h-12{height:48px}.h-14{height:56px}.h-20{height:80px}
+.max-w-xl{max-width:36rem}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}
+.max-w-\[300px\]{max-width:300px}.max-w-\[450px\]{max-width:450px}
+.aspect-video{aspect-ratio:16/9}.aspect-square{aspect-ratio:1/1}
+.object-cover{object-fit:cover}.object-position-center{object-position:center}
+.line-through{text-decoration:line-through}
+.whitespace-nowrap{white-space:nowrap}.whitespace-pre-line{white-space:pre-line}.break-words{word-break:break-word}
+.fill-current{fill:currentColor}
+.text-white{color:#fff}.bg-white{background:#fff}
+.border-b{border-bottom-width:1px}
+.animate-bounce{animation:bounce 1s infinite}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.-translate-x-1\/2{transform:translateX(-50%)}
+.container{width:100%;padding-left:16px;padding-right:16px;margin:0 auto;max-width:1200px}
+.text-xs{font-size:12px}.text-sm{font-size:14px}.text-base{font-size:16px}.text-lg{font-size:18px}.text-xl{font-size:20px}.text-2xl{font-size:24px}.text-3xl{font-size:30px}.text-4xl{font-size:36px}.text-5xl{font-size:48px}.text-6xl{font-size:60px}
+.text-\[8px\]{font-size:8px}.text-\[9px\]{font-size:9px}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[13px\]{font-size:13px}
+.tracking-\[0\.2em\]{letter-spacing:.2em}.tracking-\[0\.3em\]{letter-spacing:.3em}.tracking-\[0\.1em\]{letter-spacing:.1em}.tracking-\[0\.15em\]{letter-spacing:.15em}.tracking-wider{letter-spacing:.05em}.tracking-tighter{letter-spacing:-.05em}
+.text-\[\#FF6B00\]{color:#FF6B00}.text-\[\#2D2424\]{color:#2D2424}.text-\[\#1A1A1A\]{color:#1A1A1A}
+.text-\[\#1e293b\]{color:#1e293b}.text-\[\#64748b\]{color:#64748b}.text-\[\#475569\]{color:#475569}
+.text-\[\#00A859\]{color:#00A859}.text-\[\#00C896\]{color:#00C896}.text-\[\#FFD700\]{color:#FFD700}.text-\[\#8B4513\]{color:#8B4513}
+.text-\[\#2D2424\]\/70{color:rgba(45,36,36,.7)}.text-\[\#1A1A1A\]\/60{color:rgba(26,26,26,.6)}.text-\[\#1A1A1A\]\/40{color:rgba(26,26,26,.4)}
+.text-\[\#FF6B00\]\/80{color:rgba(255,107,0,.8)}.text-red-500\/80{color:rgba(239,68,68,.8)}.text-red-500\/70{color:rgba(239,68,68,.7)}
+.text-\[\#7B4FBF\]{color:#7B4FBF}.text-\[\#2ECC71\]{color:#2ECC71}
+.bg-\[\#FF6B00\]{background:#FF6B00}.bg-\[\#2ECC71\]{background:#2ECC71}.bg-\[\#00C896\]{background:#00C896}
+.bg-\[\#FFBF00\]{background:#FFBF00}.bg-\[\#D4F7E5\]{background:#D4F7E5}.bg-\[\#F1F5F9\]{background:#F1F5F9}.bg-\[\#f8fafc\]{background:#f8fafc}
+.bg-red-600{background:#dc2626}.bg-\[\#00A859\]{background:#00A859}
+.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}
+.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}
+.from-\[\#FFD700\]{--tw-gradient-from:#FFD700;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,transparent)}
+.from-\[\#FF8C00\]{--tw-gradient-from:#FF8C00;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,transparent)}
+.from-\[\#FF9F66\]{--tw-gradient-from:#FF9F66;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,transparent)}
+.via-\[\#FF8C00\]{--tw-gradient-stops:var(--tw-gradient-from,transparent),#FF8C00,var(--tw-gradient-to,transparent)}
+.to-\[\#FF6B00\]{--tw-gradient-to:#FF6B00}.to-\[\#FFD700\]{--tw-gradient-to:#FFD700}.to-\[\#FF5C5C\]{--tw-gradient-to:#FF5C5C}
+.border-\[\#FF6B00\]{border-color:#FF6B00}.border-\[\#FF8C00\]{border-color:#FF8C00}
+.border-\[\#00A859\]\/10{border-color:rgba(0,168,89,.1)}.border-\[\#FFD8A8\]{border-color:#FFD8A8}.border-\[\#DCFCE7\]{border-color:#DCFCE7}
+.border-\[\#FF6B00\]\/20{border-color:rgba(255,107,0,.2)}
+.border-slate-100{border-color:#f1f5f9}.border-slate-200{border-color:#e2e8f0}.border-orange-100{border-color:#ffedd5}.border-orange-500{border-color:#f97316}
+.border-\[2px\]{border-width:2px}.border-\[3px\]{border-width:3px}.border-\[12px\]{border-width:12px}.border-4{border-width:4px}.border-b-\[6px\]{border-bottom-width:6px}.border-b-\[2px\]{border-bottom-width:2px}.border-2{border-width:2px}
+.shadow-\[0_10px_40px_rgba\(0\,0\,0\,0\.05\)\]{box-shadow:0 10px 40px rgba(0,0,0,.05)}
+.shadow-\[0_10px_20px_rgba\(255\,140\,0\,0\.3\)\]{box-shadow:0 10px 20px rgba(255,140,0,.3)}
+.shadow-\[0_20px_50px_rgba\(0\,0\,0\,0\.15\)\]{box-shadow:0 20px 50px rgba(0,0,0,.15)}
+.shadow-\[0_20px_50px_rgba\(0\,0\,0\,0\.08\)\]{box-shadow:0 20px 50px rgba(0,0,0,.08)}
+.shadow-\[0_10px_30px_rgba\(46\,204\,113\,0\.3\)\]{box-shadow:0 10px 30px rgba(46,204,113,.3)}
+.shadow-\[0_30px_60px_rgba\(0\,0\,0\,0\.15\)\]{box-shadow:0 30px 60px rgba(0,0,0,.15)}
+.shadow-\[0_40px_80px_rgba\(0\,0\,0\,0\.1\)\]{box-shadow:0 40px 80px rgba(0,0,0,.1)}
+.shadow-sm{box-shadow:0 1px 2px rgba(0,0,0,.05)}.shadow-2xl{box-shadow:0 25px 50px -12px rgba(0,0,0,.25)}
+.rounded-\[2rem\]{border-radius:2rem}.rounded-\[2\.5rem\]{border-radius:2.5rem}.rounded-\[3rem\]{border-radius:3rem}
+.rounded-\[1\.5rem\]{border-radius:1.5rem}.rounded-\[2\.3rem\]{border-radius:2.3rem}
+.rounded-t-\[2\.3rem\]{border-radius:2.3rem 2.3rem 0 0}
+.rounded-\[8px\]{border-radius:8px}.rounded-lg{border-radius:8px}.rounded-md{border-radius:6px}
+.\[text-shadow\:2px_2px_0_\#000\]{text-shadow:2px 2px 0 #000}
+.drop-shadow-md{filter:drop-shadow(0 4px 3px rgba(0,0,0,.07))}
+.fill-\[\#FF6B00\]{fill:#FF6B00}
+.flex-1{flex:1}.flex-grow{flex-grow:1}.flex-shrink{flex-shrink:1}
+.font-display-optional{font-display:optional}
+.faq-answer{display:none;padding:0 32px 24px;font-size:14px;color:#64748b;font-weight:500;line-height:1.7}
+.faq-answer.open{display:block}
+@keyframes popIn{from{transform:scale(.85);opacity:0}to{transform:scale(1);opacity:1}}
+.popup-inner{animation:popIn .3s ease}
+.p-0\.5{padding:2px}
+@media(min-width:640px){.sm\:grid-cols-2{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:768px){
+  .md\:grid-cols-2{grid-template-columns:repeat(2,1fr)}
+  .md\:grid-cols-3{grid-template-columns:repeat(3,1fr)}
+  .md\:p-5{padding:20px}.md\:p-14{padding:56px}.md\:p-16{padding:64px}
+  .md\:py-6{padding-top:24px;padding-bottom:24px}
+  .md\:text-xl{font-size:1.25rem}.md\:text-2xl{font-size:1.5rem}.md\:text-3xl{font-size:1.875rem}
+  .md\:text-4xl{font-size:2.25rem}.md\:text-5xl{font-size:3rem}.md\:text-6xl{font-size:3.75rem}
+  .md\:text-sm{font-size:14px}.md\:text-base{font-size:16px}.md\:text-lg{font-size:18px}
+  .md\:w-auto{width:auto}.md\:max-w-\[400px\]{max-width:400px}
+}
+@media(min-width:1024px){
+  .lg\:grid-cols-2{grid-template-columns:repeat(2,1fr)}
+  .lg\:grid-cols-3{grid-template-columns:repeat(3,1fr)}
+  .lg\:grid-cols-4{grid-template-columns:repeat(4,1fr)}
+  .lg\:mx-0{margin-left:0;margin-right:0}
+}
+@media(hover:hover){
+  .hover\:scale-105:hover{transform:scale(1.05)}
+  .hover\:bg-\[\#27ae60\]:hover{background:#27ae60}
+  .hover\:bg-\[\#00a86b\]:hover{background:#00a86b}
+}
+.active\:scale-95:active{transform:scale(.95)}
+</style>
+<link rel="preconnect" href="https://i.ibb.co">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap"></noscript>
+<style>
+  /* Accordion FAQ fix (pure JS replacement) */
+  .faq-answer { display: none; padding: 0 32px 24px; font-size:14px; color:#64748b; font-weight:500; line-height:1.7; }
+  .faq-answer.open { display: block; }
+  .faq-btn[aria-expanded="true"] svg { transform: rotate(180deg); }
+  /* Popup animation */
+  @keyframes popIn { from { transform: scale(0.85); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  .popup-inner { animation: popIn 0.3s ease; }
+</style>
+
+
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','3379201728914543');
+    fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3379201728914543&ev=PageView&noscript=1" alt=""/></noscript>
+
+  <!-- UTMify Pixel -->
+  <script>
+    window.pixelId = "69baf167fc349e680e137181";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+
+  <!-- UTMify UTMs -->
+  <script
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-xcod-sck
+    data-utmify-prevent-subids
+    async
+    defer
+  ></script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "vxtlkts8a8");
+  </script>
+
+</head>
+<body class="font-body antialiased selection:bg-primary/30">
+
+
+
+<div class="flex flex-col min-h-screen bg-white font-body text-[#1A1A1A] overflow-x-hidden w-full">
+
+  <!-- TOP BAR + SCARCITY -->
+  <div style="background:linear-gradient(to right,#FFD700,#FF8C00,#FF6B00);color:white;padding:5px 16px;text-align:center;">
+    <div style="display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;">Oferta válida até hoje, <span id="scarcity-date"></span> — após isso o preço sobe!</span>
+    </div>
+  </div>
+  <script>
+    (function(){
+      var months = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+      var d = new Date();
+      var el = document.getElementById('scarcity-date');
+      if(el) el.textContent = d.getDate() + ' DE ' + months[d.getMonth()].toUpperCase() + ' DE ' + d.getFullYear();
+    })();
+  </script>
+
+  <!-- HERO -->
+  <section class="pt-16 pb-12 px-4 bg-white">
+    <div class="container mx-auto text-center">
+      <div class="max-w-5xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tighter leading-none mb-2 break-words">
+          <span class="text-[#FF6B00] block">+750 Dinâmicas</span>
+          <span class="text-[#2D2424] block relative inline-block">Interativas de Geografia
+            <div class="absolute bottom-1 left-0 w-full h-2 bg-[#FFD700] -z-10 rounded-full"></div>
+          </span>
+        </h1>
+        <div class="flex flex-wrap justify-center gap-2 mb-2">
+          <div class="bg-[#FFBF00] text-[#2D2424] px-1.5 py-0.5 rounded-full font-medium text-[8px] flex items-center gap-1 shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></svg>
+            + BÔNUS EXCLUSIVOS
+          </div>
+          <div class="bg-[#D4F7E5] text-[#00A859] px-1.5 py-0.5 rounded-full font-medium text-[8px] flex items-center gap-1 border border-[#00A859]/10">
+            <div class="bg-[#00A859] rounded-full p-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4"><path d="M20 6 9 17l-5-5"/></svg></div>
+            100% BNCC
+          </div>
+        </div>
+        <p class="text-lg md:text-xl text-[#2D2424]/70 max-w-2xl mx-auto font-medium">Atividades lúdicas e criativas para transformar o ensino de geografia.</p>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="mt-6 mx-auto" style="max-width:300px;">
+        <div id="vsl-container" style="border-radius:2.5rem;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,0.15);border:4px solid white;width:300px;height:533px;flex-shrink:0;background:#1a1a2e;position:relative;cursor:pointer;" onclick="initWistia()">
+          <!-- Botão play -->
+          <div id="vsl-play" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:3;padding:24px;">
+            <div style="width:80px;height:80px;background:rgba(255,255,255,0.95);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(0,0,0,0.5);margin-bottom:16px;">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="#FF6B00"><polygon points="6,3 20,12 6,21"/></svg>
+            </div>
+            <p style="color:#fff;font-size:15px;font-weight:900;text-align:center;line-height:1.4;text-shadow:0 2px 8px rgba(0,0,0,0.9);font-family:'Poppins',sans-serif;">▶ Assistir apresentação</p>
+            <p style="color:rgba(255,255,255,.75);font-size:11px;font-weight:500;margin-top:6px;font-family:'Poppins',sans-serif;">Clique para assistir o vídeo</p>
+          </div>
+        </div>
+      </div>
+      <script>
+        var _wi = false;
+        function initWistia(){
+          if(_wi) return; _wi = true;
+          // Remove thumbnail and play button
+          var vp=document.getElementById('vsl-play'); if(vp) vp.remove();
+          var c = document.getElementById('vsl-container');
+          c.style.cursor = 'default';
+          // Inject Wistia scripts only on click
+          var s1 = document.createElement('script');
+          s1.src = 'https://fast.wistia.com/embed/medias/6nvwr2znct.jsonp';
+          s1.async = true; document.head.appendChild(s1);
+          var s2 = document.createElement('script');
+          s2.src = 'https://fast.wistia.com/assets/external/E-v1.js';
+          s2.async = true; document.head.appendChild(s2);
+          var d = document.createElement('div');
+          d.className = 'wistia_embed wistia_async_6nvwr2znct videoFoam=false autoPlay=true';
+          d.style.cssText = 'width:300px;height:533px;';
+          c.appendChild(d);
+        }
+      </script>
+
+      <div class="pt-8">
+        <button class="btn-scroll inline-flex items-center justify-center gap-2 bg-[#2ECC71] hover:bg-[#27ae60] text-white font-black rounded-full px-16 py-10 text-xl md:text-2xl shadow-[0_10px_30px_rgba(46,204,113,0.3)] hover:scale-105 transition-all" onclick="document.getElementById('ofertas').scrollIntoView({behavior:'smooth'})">VER PLANOS</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE VOCÊ VAI RECEBER -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-[#2D2424]">O Que Você Vai Receber</h2>
+        <div class="w-16 h-1 bg-orange-500 mx-auto mt-3 rounded-full"></div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        <div class="border-none shadow-[0_10px_40px_rgba(0,0,0,0.05)] bg-white rounded-[2rem] p-10 flex flex-col items-center text-center hover:scale-105 transition-all">
+          <div class="w-20 h-20 rounded-full bg-gradient-to-br from-[#FF8C00] to-[#FFD700] flex items-center justify-center shadow-[0_10px_20px_rgba(255,140,0,0.3)] mb-8">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+          </div>
+          <h3 class="font-bold text-2xl mb-4 text-[#2D2424]">Material Completo</h3>
+          <p class="text-[#1A1A1A]/60 text-base font-medium leading-relaxed">+750 dinâmicas de geografia organizadas e prontas para usar</p>
+        </div>
+        <div class="border-none shadow-[0_10px_40px_rgba(0,0,0,0.05)] bg-white rounded-[2rem] p-10 flex flex-col items-center text-center hover:scale-105 transition-all">
+          <div class="w-20 h-20 rounded-full bg-gradient-to-br from-[#FF8C00] to-[#FFD700] flex items-center justify-center shadow-[0_10px_20px_rgba(255,140,0,0.3)] mb-8">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+          </div>
+          <h3 class="font-bold text-2xl mb-4 text-[#2D2424]">Acesso Digital</h3>
+          <p class="text-[#1A1A1A]/60 text-base font-medium leading-relaxed">Acesse por celular, tablet ou computador a qualquer hora</p>
+        </div>
+        <div class="border-none shadow-[0_10px_40px_rgba(0,0,0,0.05)] bg-white rounded-[2rem] p-10 flex flex-col items-center text-center hover:scale-105 transition-all">
+          <div class="w-20 h-20 rounded-full bg-gradient-to-br from-[#FF8C00] to-[#FFD700] flex items-center justify-center shadow-[0_10px_20px_rgba(255,140,0,0.3)] mb-8">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
+          </div>
+          <h3 class="font-bold text-2xl mb-4 text-[#2D2424]">Pronto para Imprimir</h3>
+          <p class="text-[#1A1A1A]/60 text-base font-medium leading-relaxed">Material formatado para impressão em qualquer tamanho</p>
+        </div>
+        <div class="border-none shadow-[0_10px_40px_rgba(0,0,0,0.05)] bg-white rounded-[2rem] p-10 flex flex-col items-center text-center hover:scale-105 transition-all">
+          <div class="w-20 h-20 rounded-full bg-gradient-to-br from-[#FF8C00] to-[#FFD700] flex items-center justify-center shadow-[0_10px_20px_rgba(255,140,0,0.3)] mb-8">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3 class="font-bold text-2xl mb-4 text-[#2D2424]">100% BNCC</h3>
+          <p class="text-[#1A1A1A]/60 text-base font-medium leading-relaxed">Todas as atividades alinhadas com códigos e habilidades</p>
+        </div>
+      </div>
+
+      <!-- Para Todas as Idades -->
+      <div class="mt-16 max-w-5xl mx-auto bg-white rounded-[2.5rem] border border-[#FF6B00] p-8 md:p-14 text-center shadow-lg relative">
+        <div class="w-20 h-20 rounded-full bg-gradient-to-br from-[#FF8C00] to-[#FFD700] flex items-center justify-center mx-auto mb-10 shadow-[0_10px_20px_rgba(255,140,0,0.3)]">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 class="text-3xl md:text-5xl font-black text-[#1e293b] mb-6 tracking-tight">Para Todas as Idades</h3>
+        <p class="text-lg md:text-xl text-[#64748b] font-medium mb-8 max-w-3xl mx-auto">Atividades pensadas para crianças, iniciantes e diferentes níveis de aprendizado.</p>
+        <div class="inline-block bg-white text-[#FF6B00] px-8 py-2 rounded-md font-bold text-lg md:text-xl border border-[#FF6B00]/20">Ideal para professores, pais e educadores.</div>
+      </div>
+
+      <!-- Video demo -->
+      <div class="mt-12 max-w-[300px] md:max-w-[400px] mx-auto overflow-hidden rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.15)] border-4 border-white">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover">
+          <source src="media/d8TMyhr.mp4" type="video/mp4">
+          Seu navegador não suporta vídeos.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA MID 1 -->
+  <div style="padding:0 16px 64px;text-align:center;background:#fff;">
+    <a href="#ofertas" onclick="document.getElementById('ofertas').scrollIntoView({behavior:'smooth'});return false;" class="btn-scroll inline-flex items-center justify-center gap-2 bg-[#2ECC71] hover:bg-[#27ae60] text-white font-black rounded-full px-12 py-6 text-lg shadow-[0_10px_30px_rgba(46,204,113,0.3)] hover:scale-105 transition-all" style="text-decoration:none;display:inline-flex;">
+      🎯 VER PREÇOS E GARANTIR AGORA
+    </a>
+    <p style="margin-top:12px;font-size:12px;color:#64748b;font-family:'Poppins',sans-serif;">🔒 Compra 100% segura • Garantia de 7 dias</p>
+  </div>
+
+  <!-- POR QUE ESCOLHER -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-[#2D2424]">Por Que Escolher Nosso Kit?</h2>
+        <div class="w-16 h-1 bg-orange-500 mx-auto mt-3 rounded-full"></div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        <div class="border-none shadow-[0_10px_40px_rgba(0,0,0,0.05)] bg-white rounded-[2rem] p-10 flex flex-col items-center text-center hover:scale-105 transition-all">
+          <div class="w-20 h-20 rounded-full bg-gradient-to-br from-[#FF8C00] to-[#FFD700] flex items-center justify-center shadow-[0_10px_20px_rgba(255,140,0,0.3)] mb-8">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="font-bold text-2xl mb-4 text-[#2D2424]">ECONOMIZE TEMPO</h3>
+          <p class="text-[#1A1A1A]/60 text-base font-medium leading-relaxed">Nunca mais perca horas procurando atividades na internet</p>
+        </div>
+        <div class="border-none shadow-[0_10px_40px_rgba(0,0,0,0.05)] bg-white rounded-[2rem] p-10 flex flex-col items-center text-center hover:scale-105 transition-all">
+          <div class="w-20 h-20 rounded-full bg-gradient-to-br from-[#FF8C00] to-[#FFD700] flex items-center justify-center shadow-[0_10px_20px_rgba(255,140,0,0.3)] mb-8">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+          </div>
+          <h3 class="font-bold text-2xl mb-4 text-[#2D2424]">ACESSO VITALÍCIO</h3>
+          <p class="text-[#1A1A1A]/60 text-base font-medium leading-relaxed">Pague uma vez e tenha acesso às dinâmicas para sempre</p>
+        </div>
+        <div class="border-none shadow-[0_10px_40px_rgba(0,0,0,0.05)] bg-white rounded-[2rem] p-10 flex flex-col items-center text-center hover:scale-105 transition-all">
+          <div class="w-20 h-20 rounded-full bg-gradient-to-br from-[#FF8C00] to-[#FFD700] flex items-center justify-center shadow-[0_10px_20px_rgba(255,140,0,0.3)] mb-8">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/></svg>
+          </div>
+          <h3 class="font-bold text-2xl mb-4 text-[#2D2424]">ORGANIZAÇÃO TOTAL</h3>
+          <p class="text-[#1A1A1A]/60 text-base font-medium leading-relaxed">Atividades categorizadas e prontas para aplicar</p>
+        </div>
+        <div class="border-none shadow-[0_10px_40px_rgba(0,0,0,0.05)] bg-white rounded-[2rem] p-10 flex flex-col items-center text-center hover:scale-105 transition-all">
+          <div class="w-20 h-20 rounded-full bg-gradient-to-br from-[#FF8C00] to-[#FFD700] flex items-center justify-center shadow-[0_10px_20px_rgba(255,140,0,0.3)] mb-8">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3 class="font-bold text-2xl mb-4 text-[#2D2424]">GARANTIA DE 7 DIAS</h3>
+          <p class="text-[#1A1A1A]/60 text-base font-medium leading-relaxed">Se não gostar, devolvemos 100% do seu dinheiro</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BÔNUS EXCLUSIVOS -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 space-y-4">
+        <div class="flex justify-center mb-4">
+          <div class="bg-white text-[#8B4513] px-6 py-2 rounded-full flex items-center gap-2 font-black text-xs md:text-sm shadow-sm border border-[#FFD8A8] animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[#FF6B00] fill-[#FF6B00]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></svg>
+            PRESENTE EXCLUSIVO
+          </div>
+        </div>
+        <div class="relative inline-block">
+          <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-none">Bônus Exclusivos</h2>
+          <div class="w-full h-1 bg-[#FF6B00] rounded-full mt-2"></div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto mb-16 px-4" style="padding-top:16px;">
+
+        <!-- Bônus 1 -->
+        <div class="relative border-[3px] border-[#FF6B00] shadow-[0_20px_50px_rgba(0,0,0,0.08)] bg-white rounded-[2.5rem] flex flex-col h-full hover:scale-105 transition-transform duration-300" style="overflow:hidden;">
+          <div class="relative aspect-video rounded-t-[2.3rem] overflow-hidden">
+            <div style="position:absolute;top:10px;right:10px;z-index:20;background:linear-gradient(to right,#FF9F66,#FF5C5C);color:white;padding:5px 14px;border-radius:999px;font-weight:900;font-size:11px;display:flex;align-items:center;gap:6px;box-shadow:0 4px 12px rgba(0,0,0,.2);border:2px solid white;">🎁 GRÁTIS</div>
+            <img alt="Kit Completo de 100 Avaliações de Geografia" class="object-cover w-full h-full" src="https://i.ibb.co/r2RLNHjD/3p-A4Dq7.jpg" loading="lazy" decoding="async">
+          </div>
+          <div class="p-6 pt-8 pb-8 px-8 flex flex-col flex-grow text-center">
+            <div class="mb-6">
+              <h4 class="font-bold text-xl md:text-2xl text-[#2D2424] leading-tight mb-2">Kit Completo de 100 Avaliações de Geografia</h4>
+              <div class="text-xl md:text-2xl font-black text-red-500/80 line-through">R$ 47,00</div>
+            </div>
+            <p class="text-[#1A1A1A]/60 text-sm font-medium leading-relaxed mb-8 flex-grow whitespace-pre-line">• Provas diagnósticas
+• Provas bimestrais
+• Atividades avaliativas
+• Rubricas de correção
+• Gabaritos</p>
+            <div class="bg-white rounded-[1.5rem] p-5 flex justify-between items-center border border-[#DCFCE7]">
+              <div class="flex flex-col text-left"><span class="text-[9px] font-black uppercase text-[#1A1A1A]/40 tracking-widest">Valor Real</span><span class="text-xs font-black text-red-500/70 line-through">R$ 47,00</span></div>
+              <div class="flex flex-col items-end"><span class="text-[9px] font-black uppercase text-[#00A859] tracking-widest">Você Paga</span><span class="text-xl md:text-2xl font-black text-[#00A859]">R$ 0,00</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bônus 2 -->
+        <div class="relative border-[3px] border-[#FF6B00] shadow-[0_20px_50px_rgba(0,0,0,0.08)] bg-white rounded-[2.5rem] flex flex-col h-full hover:scale-105 transition-transform duration-300" style="overflow:hidden;">
+          <div class="relative aspect-video rounded-t-[2.3rem] overflow-hidden">
+            <div style="position:absolute;top:10px;right:10px;z-index:20;background:linear-gradient(to right,#FF9F66,#FF5C5C);color:white;padding:5px 14px;border-radius:999px;font-weight:900;font-size:11px;display:flex;align-items:center;gap:6px;box-shadow:0 4px 12px rgba(0,0,0,.2);border:2px solid white;">🎁 GRÁTIS</div>
+            <img loading="lazy" decoding="async" alt="Planejamento Anual Completo de Geografia" class="object-cover w-full h-full" src="https://i.ibb.co/MF6Q1TB/l4LTz-UA.jpg" loading="lazy" decoding="async">
+          </div>
+          <div class="p-6 pt-8 pb-8 px-8 flex flex-col flex-grow text-center">
+            <div class="mb-6">
+              <h4 class="font-bold text-xl md:text-2xl text-[#2D2424] leading-tight mb-2">Planejamento Anual Completo de Geografia</h4>
+              <div class="text-xl md:text-2xl font-black text-red-500/80 line-through">R$ 65,00</div>
+            </div>
+            <p class="text-[#1A1A1A]/60 text-sm font-medium leading-relaxed mb-8 flex-grow whitespace-pre-line">• Planejamento por bimestre
+• Conteúdos organizados
+• Objetivos da aula
+• Sugestões de atividades</p>
+            <div class="bg-white rounded-[1.5rem] p-5 flex justify-between items-center border border-[#DCFCE7]">
+              <div class="flex flex-col text-left"><span class="text-[9px] font-black uppercase text-[#1A1A1A]/40 tracking-widest">Valor Real</span><span class="text-xs font-black text-red-500/70 line-through">R$ 65,00</span></div>
+              <div class="flex flex-col items-end"><span class="text-[9px] font-black uppercase text-[#00A859] tracking-widest">Você Paga</span><span class="text-xl md:text-2xl font-black text-[#00A859]">R$ 0,00</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bônus 3 -->
+        <div class="relative border-[3px] border-[#FF6B00] shadow-[0_20px_50px_rgba(0,0,0,0.08)] bg-white rounded-[2.5rem] flex flex-col h-full hover:scale-105 transition-transform duration-300" style="overflow:hidden;">
+          <div class="relative aspect-video rounded-t-[2.3rem] overflow-hidden">
+            <div style="position:absolute;top:10px;right:10px;z-index:20;background:linear-gradient(to right,#FF9F66,#FF5C5C);color:white;padding:5px 14px;border-radius:999px;font-weight:900;font-size:11px;display:flex;align-items:center;gap:6px;box-shadow:0 4px 12px rgba(0,0,0,.2);border:2px solid white;">🎁 GRÁTIS</div>
+            <img loading="lazy" decoding="async" alt="Manual do Professor de Geografia Dinâmica" class="object-cover w-full h-full" src="https://i.ibb.co/s9x3Nn83/h5q29al.jpg" loading="lazy" decoding="async">
+          </div>
+          <div class="p-6 pt-8 pb-8 px-8 flex flex-col flex-grow text-center">
+            <div class="mb-6">
+              <h4 class="font-bold text-xl md:text-2xl text-[#2D2424] leading-tight mb-2">Manual do Professor de Geografia Dinâmica</h4>
+              <div class="text-xl md:text-2xl font-black text-red-500/80 line-through">R$ 55,00</div>
+            </div>
+            <p class="text-[#1A1A1A]/60 text-sm font-medium leading-relaxed mb-8 flex-grow">Ideal para professores que desejam sair do modelo tradicional e tornar suas aulas mais dinâmicas, produtivas e memoráveis para a turma.</p>
+            <div class="bg-white rounded-[1.5rem] p-5 flex justify-between items-center border border-[#DCFCE7]">
+              <div class="flex flex-col text-left"><span class="text-[9px] font-black uppercase text-[#1A1A1A]/40 tracking-widest">Valor Real</span><span class="text-xs font-black text-red-500/70 line-through">R$ 55,00</span></div>
+              <div class="flex flex-col items-end"><span class="text-[9px] font-black uppercase text-[#00A859] tracking-widest">Você Paga</span><span class="text-xl md:text-2xl font-black text-[#00A859]">R$ 0,00</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bônus 4 -->
+        <div class="relative border-[3px] border-[#FF6B00] shadow-[0_20px_50px_rgba(0,0,0,0.08)] bg-white rounded-[2.5rem] flex flex-col h-full hover:scale-105 transition-transform duration-300" style="overflow:hidden;">
+          <div class="relative aspect-video rounded-t-[2.3rem] overflow-hidden">
+            <div style="position:absolute;top:10px;right:10px;z-index:20;background:linear-gradient(to right,#FF9F66,#FF5C5C);color:white;padding:5px 14px;border-radius:999px;font-weight:900;font-size:11px;display:flex;align-items:center;gap:6px;box-shadow:0 4px 12px rgba(0,0,0,.2);border:2px solid white;">🎁 GRÁTIS</div>
+            <img loading="lazy" decoding="async" alt="Planos de aulas prontas" class="object-cover w-full h-full" src="https://i.ibb.co/fshNK47/4m-Tgnw-X.jpg" loading="lazy" decoding="async">
+          </div>
+          <div class="p-6 pt-8 pb-8 px-8 flex flex-col flex-grow text-center">
+            <div class="mb-6">
+              <h4 class="font-bold text-xl md:text-2xl text-[#2D2424] leading-tight mb-2">Planos de aulas prontas</h4>
+              <div class="text-xl md:text-2xl font-black text-red-500/80 line-through">R$ 37,00</div>
+            </div>
+            <p class="text-[#1A1A1A]/60 text-sm font-medium leading-relaxed mb-8 flex-grow">Pare de planejar do zero. Aulas organizadas e prontas para aplicar.</p>
+            <div class="bg-white rounded-[1.5rem] p-5 flex justify-between items-center border border-[#DCFCE7]">
+              <div class="flex flex-col text-left"><span class="text-[9px] font-black uppercase text-[#1A1A1A]/40 tracking-widest">Valor Real</span><span class="text-xs font-black text-red-500/70 line-through">R$ 37,00</span></div>
+              <div class="flex flex-col items-end"><span class="text-[9px] font-black uppercase text-[#00A859] tracking-widest">Você Paga</span><span class="text-xl md:text-2xl font-black text-[#00A859]">R$ 0,00</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bônus 5 -->
+        <div class="relative border-[3px] border-[#FF6B00] shadow-[0_20px_50px_rgba(0,0,0,0.08)] bg-white rounded-[2.5rem] flex flex-col h-full hover:scale-105 transition-transform duration-300" style="overflow:hidden;">
+          <div class="relative aspect-video rounded-t-[2.3rem] overflow-hidden">
+            <div style="position:absolute;top:10px;right:10px;z-index:20;background:linear-gradient(to right,#FF9F66,#FF5C5C);color:white;padding:5px 14px;border-radius:999px;font-weight:900;font-size:11px;display:flex;align-items:center;gap:6px;box-shadow:0 4px 12px rgba(0,0,0,.2);border:2px solid white;">🎁 GRÁTIS</div>
+            <img loading="lazy" decoding="async" alt="200 Mapas Prontos para Atividades" class="object-cover w-full h-full" src="https://i.ibb.co/kV0vP0Vw/9cx-G7C8.jpg" loading="lazy" decoding="async">
+          </div>
+          <div class="p-6 pt-8 pb-8 px-8 flex flex-col flex-grow text-center">
+            <div class="mb-6">
+              <h4 class="font-bold text-xl md:text-2xl text-[#2D2424] leading-tight mb-2">200 Mapas Prontos para Atividades</h4>
+              <div class="text-xl md:text-2xl font-black text-red-500/80 line-through">R$ 37,00</div>
+            </div>
+            <p class="text-[#1A1A1A]/60 text-sm font-medium leading-relaxed mb-8 flex-grow">Mapas prontos para usar em atividades, provas e fixação de conteúdo.</p>
+            <div class="bg-white rounded-[1.5rem] p-5 flex justify-between items-center border border-[#DCFCE7]">
+              <div class="flex flex-col text-left"><span class="text-[9px] font-black uppercase text-[#1A1A1A]/40 tracking-widest">Valor Real</span><span class="text-xs font-black text-red-500/70 line-through">R$ 37,00</span></div>
+              <div class="flex flex-col items-end"><span class="text-[9px] font-black uppercase text-[#00A859] tracking-widest">Você Paga</span><span class="text-xl md:text-2xl font-black text-[#00A859]">R$ 0,00</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Total bônus -->
+      <div class="max-w-xl mx-auto px-4">
+        <div class="w-full bg-[#2ECC71] text-white font-black rounded-2xl py-4 md:py-6 shadow-xl uppercase tracking-tight flex flex-col justify-center items-center gap-1 px-4 border-b-[2px] border-[#1d8a4d] text-center">
+          <div class="text-sm md:text-lg leading-relaxed flex items-center flex-wrap justify-center gap-1">
+            Todos esses bônus dariam mais de
+            <span class="bg-red-600 text-white px-2 py-0.5 rounded-lg inline-block border-2 border-white shadow-md text-xs md:text-sm">R$ 241,00</span>
+            mas SOMENTE HOJE,
+          </div>
+          <div class="text-[#FFD700] text-xl md:text-2xl font-black [text-shadow:2px_2px_0_#000] drop-shadow-md">VOCÊ LEVA DE GRAÇA!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- WHATSAPP DELIVERY MOCKUP -->
+  <section style="padding:80px 16px;background:#f0fdf4;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:40px;">
+      <div style="text-align:center;">
+        <div style="display:inline-block;background:#dcfce7;color:#16a34a;padding:6px 20px;border-radius:999px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px;font-family:'Poppins',sans-serif;">📲 Entrega Imediata</div>
+        <h2 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;color:#1e293b;letter-spacing:-.03em;line-height:1.1;font-family:'Poppins',sans-serif;">Material enviado direto<br>no seu <span style="color:#25D366;">WhatsApp!</span></h2>
+        <p style="margin-top:12px;font-size:16px;color:#64748b;font-weight:500;font-family:'Poppins',sans-serif;">Após a confirmação do pagamento, você recebe<br>o acesso completo em menos de 5 minutos.</p>
+      </div>
+      <!-- Mockup WhatsApp -->
+      <div style="position:relative;max-width:320px;width:100%;">
+        <!-- Phone frame -->
+        <div style="background:#1e293b;border-radius:40px;padding:12px;box-shadow:0 30px 60px rgba(0,0,0,0.25);">
+          <div style="background:#e5ddd5;border-radius:30px;overflow:hidden;min-height:480px;position:relative;">
+            <!-- WA Header -->
+            <div style="background:#075E54;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+              <div style="width:38px;height:38px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;font-size:20px;">🌍</div>
+              <div>
+                <div style="color:white;font-weight:700;font-size:14px;font-family:'Poppins',sans-serif;">GeoDinâmicas</div>
+                <div style="color:rgba(255,255,255,.7);font-size:11px;font-family:'Poppins',sans-serif;">online agora</div>
+              </div>
+            </div>
+            <!-- Messages -->
+            <div style="padding:16px 12px;display:flex;flex-direction:column;gap:10px;">
+              <!-- Message 1 -->
+              <div style="background:#dcf8c6;border-radius:12px 12px 2px 12px;padding:10px 14px;max-width:85%;align-self:flex-end;box-shadow:0 1px 2px rgba(0,0,0,.1);">
+                <p style="font-size:13px;color:#1e293b;font-family:'Poppins',sans-serif;margin:0;">Acabei de comprar! 🎉</p>
+                <span style="font-size:10px;color:#64748b;float:right;margin-top:4px;">14:32 ✓✓</span>
+              </div>
+              <!-- Message 2 from GEO -->
+              <div style="background:white;border-radius:12px 12px 12px 2px;padding:10px 14px;max-width:90%;box-shadow:0 1px 2px rgba(0,0,0,.1);">
+                <p style="font-size:13px;color:#1e293b;font-family:'Poppins',sans-serif;margin:0;">Olá! 🎊 Seu acesso foi confirmado! Aqui está o seu material completo:</p>
+                <span style="font-size:10px;color:#64748b;float:right;margin-top:4px;">14:32</span>
+              </div>
+              <!-- File attachment -->
+              <div style="background:white;border-radius:12px 12px 12px 2px;padding:10px 12px;max-width:90%;box-shadow:0 1px 2px rgba(0,0,0,.1);">
+                <div style="background:#f1f5f9;border-radius:8px;padding:10px;display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+                  <div style="width:36px;height:36px;background:#FF6B00;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">📚</div>
+                  <div>
+                    <div style="font-size:12px;font-weight:700;color:#1e293b;font-family:'Poppins',sans-serif;">+750 Dinâmicas de Geografia</div>
+                    <div style="font-size:10px;color:#64748b;font-family:'Poppins',sans-serif;">PDF • Acesso vitalício</div>
+                  </div>
+                </div>
+                <div style="background:#f1f5f9;border-radius:8px;padding:10px;display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+                  <div style="width:36px;height:36px;background:#2ECC71;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">🎁</div>
+                  <div>
+                    <div style="font-size:12px;font-weight:700;color:#1e293b;font-family:'Poppins',sans-serif;">5 Bônus Exclusivos</div>
+                    <div style="font-size:10px;color:#64748b;font-family:'Poppins',sans-serif;">Entregues agora mesmo</div>
+                  </div>
+                </div>
+                <p style="font-size:12px;color:#1e293b;font-family:'Poppins',sans-serif;margin:8px 0 0;">Seja bem-vinda! Qualquer dúvida é só chamar aqui. 😊</p>
+                <span style="font-size:10px;color:#64748b;float:right;margin-top:4px;">14:33</span>
+              </div>
+              <!-- Reply -->
+              <div style="background:#dcf8c6;border-radius:12px 12px 2px 12px;padding:10px 14px;max-width:85%;align-self:flex-end;box-shadow:0 1px 2px rgba(0,0,0,.1);">
+                <p style="font-size:13px;color:#1e293b;font-family:'Poppins',sans-serif;margin:0;">Amei!! Muito obrigada 😍🙌</p>
+                <span style="font-size:10px;color:#64748b;float:right;margin-top:4px;">14:35 ✓✓</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Glow effect -->
+        <div style="position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);width:80%;height:40px;background:#25D366;filter:blur(25px);opacity:.3;border-radius:50%;z-index:-1;"></div>
+      </div>
+      <!-- Bullet points -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;width:100%;max-width:600px;">
+        <div style="display:flex;align-items:center;gap:10px;background:white;border-radius:16px;padding:14px;box-shadow:0 2px 12px rgba(0,0,0,.06);">
+          <span style="font-size:22px;">⚡</span>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:#1e293b;font-family:'Poppins',sans-serif;">Acesso em 5 min</div>
+            <div style="font-size:11px;color:#64748b;font-family:'Poppins',sans-serif;">Direto no WhatsApp</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;background:white;border-radius:16px;padding:14px;box-shadow:0 2px 12px rgba(0,0,0,.06);">
+          <span style="font-size:22px;">📱</span>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:#1e293b;font-family:'Poppins',sans-serif;">Qualquer plataforma</div>
+            <div style="font-size:11px;color:#64748b;font-family:'Poppins',sans-serif;">Cel, tablet ou PC</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;background:white;border-radius:16px;padding:14px;box-shadow:0 2px 12px rgba(0,0,0,.06);">
+          <span style="font-size:22px;">♾️</span>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:#1e293b;font-family:'Poppins',sans-serif;">Acesso vitalício</div>
+            <div style="font-size:11px;color:#64748b;font-family:'Poppins',sans-serif;">Para sempre</div>
+          </div>
+        </div>
+      </div>
+      <a href="#ofertas" onclick="document.getElementById('ofertas').scrollIntoView({behavior:'smooth'});return false;" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:white;font-weight:900;border-radius:9999px;padding:18px 48px;font-size:17px;box-shadow:0 10px 30px rgba(37,211,102,.35);transition:transform .2s;font-family:'Poppins',sans-serif;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        📲 RECEBER NO MEU WHATSAPP AGORA
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA MID 2 -->
+  <div style="padding:0 16px 64px;text-align:center;background:#fff;">
+    <a href="#ofertas" onclick="document.getElementById('ofertas').scrollIntoView({behavior:'smooth'});return false;" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#FF6B00;color:white;font-weight:900;border-radius:9999px;padding:20px 48px;font-size:18px;box-shadow:0 10px 30px rgba(255,107,0,0.35);transition:transform .2s;font-family:'Poppins',sans-serif;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+      🎁 GARANTIR BÔNUS + ACESSO AGORA
+    </a>
+    <p style="margin-top:12px;font-size:12px;color:#64748b;font-family:'Poppins',sans-serif;">✅ Acesso imediato • 🔒 Pagamento seguro</p>
+  </div>
+
+  <!-- PLANOS -->
+  <section id="ofertas" class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black text-[#1e293b]">Escolha Seu Plano</h2>
+        <!-- COUNTDOWN -->
+        <div style="margin-top:20px;display:inline-flex;flex-direction:column;align-items:center;gap:8px;">
+          <p style="font-size:13px;font-weight:700;color:#dc2626;text-transform:uppercase;letter-spacing:.05em;font-family:'Poppins',sans-serif;">⏰ Oferta expira em:</p>
+          <div style="display:flex;gap:12px;align-items:center;">
+            <div style="background:#1e293b;color:white;border-radius:12px;padding:12px 16px;min-width:60px;text-align:center;">
+              <div id="cd-hours" style="font-size:28px;font-weight:900;font-family:'Poppins',sans-serif;line-height:1;">00</div>
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;opacity:.7;margin-top:2px;">horas</div>
+            </div>
+            <div style="font-size:28px;font-weight:900;color:#1e293b;">:</div>
+            <div style="background:#1e293b;color:white;border-radius:12px;padding:12px 16px;min-width:60px;text-align:center;">
+              <div id="cd-mins" style="font-size:28px;font-weight:900;font-family:'Poppins',sans-serif;line-height:1;">00</div>
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;opacity:.7;margin-top:2px;">min</div>
+            </div>
+            <div style="font-size:28px;font-weight:900;color:#1e293b;">:</div>
+            <div style="background:#dc2626;color:white;border-radius:12px;padding:12px 16px;min-width:60px;text-align:center;">
+              <div id="cd-secs" style="font-size:28px;font-weight:900;font-family:'Poppins',sans-serif;line-height:1;">00</div>
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;opacity:.7;margin-top:2px;">seg</div>
+            </div>
+          </div>
+          <p style="font-size:11px;color:#dc2626;font-weight:700;font-family:'Poppins',sans-serif;">🔥 <span id="cd-spots">17</span> pessoas estão vendo esta oferta agora!</p>
+        </div>
+      </div>
+      <script>
+      (function(){
+        // Countdown until midnight today
+        function updateCountdown(){
+          var now = new Date();
+          var midnight = new Date(now); midnight.setHours(23,59,59,0);
+          var diff = Math.max(0, Math.floor((midnight - now)/1000));
+          var h = Math.floor(diff/3600);
+          var m = Math.floor((diff%3600)/60);
+          var s = diff%60;
+          var pad = function(n){return n<10?'0'+n:n};
+          var eh=document.getElementById('cd-hours'), em=document.getElementById('cd-mins'), es=document.getElementById('cd-secs');
+          if(eh) eh.textContent=pad(h);
+          if(em) em.textContent=pad(m);
+          if(es) es.textContent=pad(s);
+        }
+        updateCountdown();
+        setInterval(updateCountdown,1000);
+        // Fluctuate "people watching"
+        setInterval(function(){
+          var el=document.getElementById('cd-spots');
+          if(el){var v=parseInt(el.textContent);var d=Math.random()>.5?1:-1;v=Math.max(11,Math.min(24,v+d));el.textContent=v;}
+        },7000);
+      })();
+      </script>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
+
+        <!-- Plano Básico -->
+        <div class="border border-slate-200 shadow-xl bg-white rounded-2xl overflow-hidden flex flex-col p-4 md:p-5">
+          <div class="text-center mb-2">
+            <h3 class="text-xl font-bold text-[#1e293b] mb-2">Plano Básico</h3>
+            <div class="mb-1">
+              <div class="text-[#00C896] text-4xl md:text-5xl font-bold tracking-tighter">R$10,00</div>
+              <div class="text-[#64748b] text-xs font-medium mt-0.5">pagamento único</div>
+            </div>
+          </div>
+          <ul class="space-y-1.5 mb-4">
+            <li class="flex items-center gap-3 text-sm font-medium text-[#475569]"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#00C896]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> +750 Dinâmicas de Geografia</li>
+            <li class="flex items-center gap-3 text-sm font-medium text-[#475569]"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#00C896]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Acesso digital</li>
+            <li class="flex items-center gap-3 text-sm font-medium text-[#475569]"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#00C896]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Garantia de 7 dias</li>
+          </ul>
+          <div class="mt-auto pt-2">
+            <button id="btn-basico" class="btn-buy w-full bg-[#00C896] hover:bg-[#00a86b] text-white font-bold rounded-full py-5 text-sm flex items-center justify-center gap-2 shadow-lg transition-transform hover:scale-105">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+              ACESSAR PLANO BÁSICO
+            </button>
+          </div>
+        </div>
+
+        <!-- Plano Premium -->
+        <div class="border-[2px] border-[#FF8C00] shadow-2xl bg-white rounded-2xl overflow-visible relative flex flex-col p-4 md:p-5">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#FF8C00] text-white px-6 py-1.5 rounded-full font-black text-[10px] uppercase tracking-wider shadow-lg whitespace-nowrap">MAIS POPULAR</div>
+          <div class="text-center mb-2">
+            <h3 class="text-xl font-bold text-[#1e293b] mb-1">Plano Premium</h3>
+            <div class="mb-1">
+              <div class="text-[#00C896] text-5xl md:text-6xl font-bold tracking-tighter">R$27,90</div>
+              <div class="text-[#64748b] text-xs font-medium mt-0.5">pagamento único</div>
+            </div>
+            <div class="inline-block bg-[#F1F5F9] text-[#64748B] px-4 py-0.5 rounded-full text-[10px] font-bold mt-1">+2.157 professores já transformaram suas aulas</div>
+          </div>
+          <ul class="space-y-1.5 mb-4">
+            <li class="flex items-center gap-3 text-[13px] font-medium text-[#475569]"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[#00C896]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> +750 Dinâmicas de Geografia</li>
+            <li class="flex items-center gap-3 text-[13px] font-medium text-[#475569]"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[#00C896]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Acesso digital e imediato</li>
+            <li class="flex items-center gap-3 text-[13px] font-bold text-[#1e293b]"><span>🎁</span> BÔNUS: Kit Completo de 100 Avaliações de Geografia</li>
+            <li class="flex items-center gap-3 text-[13px] font-bold text-[#1e293b]"><span>🎁</span> BÔNUS: Planejamento Anual Completo de Geografia</li>
+            <li class="flex items-center gap-3 text-[13px] font-bold text-[#1e293b]"><span>🎁</span> BÔNUS: Manual do Professor de Geografia Dinâmica</li>
+            <li class="flex items-center gap-3 text-[13px] font-bold text-[#1e293b]"><span>🎁</span> BÔNUS: Planos de aulas prontas</li>
+            <li class="flex items-center gap-3 text-[13px] font-bold text-[#1e293b]"><span>🎁</span> BÔNUS: 200 Mapas Prontos para Atividades</li>
+            <li class="flex items-center gap-3 text-[13px] font-medium text-[#475569]"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[#00C896]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Suporte prioritário</li>
+            <li class="flex items-center gap-3 text-[13px] font-medium text-[#475569]"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[#00C896]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Garantia de 7 dias</li>
+          </ul>
+          <div class="mt-auto pt-2">
+            <button onclick="if(typeof fbq!=='undefined'){fbq('track','InitiateCheckout');}window.location.href='https://www.ggcheckout.com/checkout/v5/IY3KXPySPzqKl3NMc6Qw'" class="btn-buy w-full bg-[#00C896] hover:bg-[#00a86b] text-white font-bold rounded-full py-6 text-sm flex items-center justify-center gap-2 shadow-lg transition-transform hover:scale-105">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+              QUERO O PLANO PREMIUM
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 space-y-4">
+        <h2 class="text-4xl md:text-5xl font-black text-[#1e293b]">O Que Nossos Clientes Dizem</h2>
+        <div class="flex flex-col items-center gap-2">
+          <div class="flex gap-1 text-[#FFD700]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+          </div>
+          <span class="font-bold text-sm text-[#64748b]">4.9/5 - 347 avaliações</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="border border-slate-100 shadow-lg bg-white p-8 rounded-[2rem] flex flex-col justify-between h-full hover:scale-105 transition-transform">
+          <p class="text-[#64748b] font-medium text-base leading-relaxed">"As dinâmicas transformaram minhas aulas! Meus alunos nunca estiveram tão engajados com geografia. Material excepcional!"</p>
+          <div class="flex items-center gap-4 mt-10">
+            <div class="relative w-12 h-12 rounded-full overflow-hidden border border-slate-100">
+              <img loading="lazy" decoding="async" alt="Prof. Ana Silva" class="object-cover w-full h-full" src="https://i.ibb.co/hFJx4TfY/Sx-Iyca-A.jpg" loading="lazy" decoding="async">
+            </div>
+            <div>
+              <span class="font-bold text-[#1e293b] text-sm block">Prof. Ana Silva</span>
+              <span class="text-[#64748b] text-xs">Professora de Geografia - SP</span>
+            </div>
+          </div>
+        </div>
+        <div class="border border-slate-100 shadow-lg bg-white p-8 rounded-[2rem] flex flex-col justify-between h-full hover:scale-105 transition-transform">
+          <p class="text-[#64748b] font-medium text-base leading-relaxed">"Meu filho sempre teve dificuldades com geografia. Com essas atividades, ele começou a se interessar pela matéria. Recomendo!"</p>
+          <div class="flex items-center gap-4 mt-10">
+            <div class="relative w-12 h-12 rounded-full overflow-hidden border border-slate-100">
+              <img loading="lazy" decoding="async" alt="Carla Santos" class="object-cover w-full h-full" src="https://i.ibb.co/MyMK0VfT/Y0-Wb-Ys-S.jpg" loading="lazy" decoding="async">
+            </div>
+            <div>
+              <span class="font-bold text-[#1e293b] text-sm block">Carla Santos</span>
+              <span class="text-[#64748b] text-xs">Mãe de Aluno - RJ</span>
+            </div>
+          </div>
+        </div>
+        <div class="border border-slate-100 shadow-lg bg-white p-8 rounded-[2rem] flex flex-col justify-between h-full hover:scale-105 transition-transform">
+          <p class="text-[#64748b] font-medium text-base leading-relaxed">"Implementamos na nossa escola e os resultados foram incríveis. Os professores adoraram e os alunos melhoraram muito!"</p>
+          <div class="flex items-center gap-4 mt-10">
+            <div class="relative w-12 h-12 rounded-full overflow-hidden border border-slate-100">
+              <img loading="lazy" decoding="async" alt="Marisa Oliveira" class="object-cover w-full h-full" src="https://i.ibb.co/mjnXd0S/JSBw-VNk.jpg" loading="lazy" decoding="async">
+            </div>
+            <div>
+              <span class="font-bold text-[#1e293b] text-sm block">Marisa Oliveira</span>
+              <span class="text-[#64748b] text-xs">Coordenadora Escolar - MG</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTORA -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 max-w-6xl mx-auto items-center">
+        <div class="relative w-full aspect-square max-w-[450px] mx-auto lg:mx-0 rounded-[3rem] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.15)] border-[12px] border-white">
+          <img loading="lazy" decoding="async" alt="SANDRA NICOLAU" class="object-cover w-full h-full" src="https://i.ibb.co/HLh3wZj7/vrvf-LKA.jpg" loading="lazy" decoding="async">
+        </div>
+        <div class="space-y-10">
+          <div class="space-y-3">
+            <h2 class="text-4xl font-black uppercase tracking-tighter leading-none">Conheça a Autora</h2>
+            <p class="text-[#FF6B00] font-black uppercase tracking-[0.2em] text-sm">SANDRA NICOLAU</p>
+          </div>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="bg-white p-6 rounded-3xl shadow-lg border-b-[6px] border-[#FF6B00] text-center">
+              <p class="text-3xl font-black text-[#FF6B00]">10+</p>
+              <p class="text-[10px] font-black uppercase text-[#1A1A1A]/60">Anos Exp.</p>
+            </div>
+            <div class="bg-white p-6 rounded-3xl shadow-lg border-b-[6px] border-[#2ECC71] text-center">
+              <p class="text-3xl font-black text-[#2ECC71]">15k+</p>
+              <p class="text-[10px] font-black uppercase text-[#1A1A1A]/60">Alunos</p>
+            </div>
+            <div class="bg-white p-6 rounded-3xl shadow-lg border-b-[6px] border-[#7B4FBF] text-center">
+              <p class="text-3xl font-black text-[#7B4FBF]">750+</p>
+              <p class="text-[10px] font-black uppercase text-[#1A1A1A]/60">Recursos</p>
+            </div>
+          </div>
+          <p class="text-[#1A1A1A]/70 font-medium text-lg leading-relaxed">Especialista em metodologias ativas e gamificação no ensino de Geografia. Minha missão é ajudar professores a transformarem a sala de aula em um ambiente de discovery, engajamento e paixão pelo conhecimento geográfico.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GARANTIA -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="border-[2px] border-[#FF6B00] shadow-[0_40px_80px_rgba(0,0,0,0.1)] bg-white p-12 md:p-16 rounded-[3rem] text-center space-y-12 relative overflow-hidden">
+        <h2 class="text-3xl md:text-4xl font-black uppercase tracking-tighter leading-tight text-[#2D2424]">RISCO ZERO! SUA SATISFAÇÃO OU SEU DINHEIRO DE VOLTA</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+          <div class="flex items-start gap-4">
+            <div class="shrink-0 w-14 h-14 rounded-full bg-[#FF6B00] text-white flex items-center justify-center shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+            </div>
+            <div><h4 class="font-black text-lg text-[#2D2424] leading-tight">7 Dias de Garantia</h4><p class="text-sm font-medium text-[#1A1A1A]/60 leading-relaxed mt-1">Você tem 7 dias para testar tudo. Se não gostar, devolvemos 100% do seu dinheiro, sem burocracia.</p></div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="shrink-0 w-14 h-14 rounded-full bg-[#FF6B00] text-white flex items-center justify-center shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <div><h4 class="font-black text-lg text-[#2D2424] leading-tight">Compra 100% Segura</h4><p class="text-sm font-medium text-[#1A1A1A]/60 leading-relaxed mt-1">Seus dados são protegidos com a mesma tecnologia de criptografia dos grandes bancos. Sua privacidade está a salvo.</p></div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="shrink-0 w-14 h-14 rounded-full bg-[#FF6B00] text-white flex items-center justify-center shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            </div>
+            <div><h4 class="font-black text-lg text-[#2D2424] leading-tight">Acesso Imediato</h4><p class="text-sm font-medium text-[#1A1A1A]/60 leading-relaxed mt-1">Pagamento aprovado, acesso liberado! Você recebe o material no seu e-mail na hora, sem enrolação.</p></div>
+          </div>
+        </div>
+        <div class="pt-4">
+          <button class="btn-scroll inline-flex items-center justify-center gap-2 bg-[#2ECC71] hover:bg-[#27ae60] text-white font-black rounded-full px-12 py-8 text-lg md:text-xl shadow-2xl uppercase tracking-tight transition-transform active:scale-95 w-full md:w-auto" onclick="document.getElementById('ofertas').scrollIntoView({behavior:'smooth'})">VER PLANOS</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-tight">DÚVIDAS FREQUENTES</h2>
+      </div>
+      <div class="space-y-6">
+        <div class="bg-white px-8 rounded-[2rem] shadow-sm overflow-hidden">
+          <h3 class="flex">
+            <button class="faq-btn flex flex-1 items-center justify-between py-6 text-base md:text-lg font-black uppercase text-left" aria-expanded="false" onclick="toggleFaq(this)">
+              Como recebo o acesso?
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq-answer">Após a confirmação do pagamento, você recebe um e-mail com o link de acesso imediatamente. O processo é automático e leva menos de 5 minutos.</div>
+        </div>
+        <div class="bg-white px-8 rounded-[2rem] shadow-sm overflow-hidden">
+          <h3 class="flex">
+            <button class="faq-btn flex flex-1 items-center justify-between py-6 text-base md:text-lg font-black uppercase text-left" aria-expanded="false" onclick="toggleFaq(this)">
+              O acesso é vitalício?
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq-answer">Sim! Você paga uma única vez e tem acesso para sempre ao material. Não há mensalidade nem taxas extras.</div>
+        </div>
+        <div class="bg-white px-8 rounded-[2rem] shadow-sm overflow-hidden">
+          <h3 class="flex">
+            <button class="faq-btn flex flex-1 items-center justify-between py-6 text-base md:text-lg font-black uppercase text-left" aria-expanded="false" onclick="toggleFaq(this)">
+              Posso imprimir em preto e branco?
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq-answer">Sim, todo o material foi desenvolvido para funcionar tanto em impressão colorida quanto em preto e branco, sem perda de qualidade.</div>
+        </div>
+        <div class="bg-white px-8 rounded-[2rem] shadow-sm overflow-hidden">
+          <h3 class="flex">
+            <button class="faq-btn flex flex-1 items-center justify-between py-6 text-base md:text-lg font-black uppercase text-left" aria-expanded="false" onclick="toggleFaq(this)">
+              As dinâmicas servem para qual idade?
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq-answer">O material foi criado para atender diferentes faixas etárias, desde o Ensino Fundamental até o Ensino Médio, com atividades organizadas por nível de dificuldade.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-16 border-t border-orange-100 text-center bg-white">
+    <div class="container mx-auto px-4 space-y-8">
+      <div class="flex justify-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-[#FF6B00] text-[#FF6B00]" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-[#FF6B00] text-[#FF6B00]" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-[#FF6B00] text-[#FF6B00]" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-[#FF6B00] text-[#FF6B00]" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-[#FF6B00] text-[#FF6B00]" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+      </div>
+      <p class="text-[11px] font-black uppercase tracking-[0.3em] text-[#1A1A1A]/40">© 2026 GeoDinâmicas - +750 Dinâmicas de Geografia - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</div>
+
+<!-- POPUP OFERTA ESPECIAL -->
+<div id="popup-overlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index:9999; align-items:center; justify-content:center; padding:16px;">
+  <div class="popup-inner" style="background:white; border-radius:2rem; max-width:480px; width:100%; padding:40px 32px; text-align:center; position:relative; box-shadow:0 40px 80px rgba(0,0,0,0.3);">
+    <button onclick="window.location.href='https://www.ggcheckout.com/checkout/v5/w9wsjuKhFMSdBNUQ5NMp'" style="position:absolute; top:16px; right:20px; background:none; border:none; font-size:22px; cursor:pointer; color:#64748b; font-family:'Poppins',sans-serif;">✕</button>
+    <div style="font-size:40px; margin-bottom:12px;">🎉</div>
+    <div style="background:linear-gradient(to right,#FF6B00,#FFD700); color:white; font-size:11px; font-weight:900; text-transform:uppercase; letter-spacing:0.15em; padding:6px 20px; border-radius:999px; display:inline-block; margin-bottom:16px; font-family:'Poppins',sans-serif;">OFERTA ESPECIAL</div>
+    <h3 style="font-size:22px; font-weight:900; color:#1e293b; line-height:1.2; margin-bottom:8px; letter-spacing:-0.02em; font-family:'Poppins',sans-serif;">Garanta Agora com<br>Desconto Exclusivo!</h3>
+    <p style="color:#64748b; font-size:14px; font-weight:500; margin-bottom:20px; line-height:1.6; font-family:'Poppins',sans-serif;">Aproveite esta oferta por tempo limitado e leve o Kit GeoDinâmicas por um preço especial.</p>
+    <div style="background:#f8fafc; border-radius:1.5rem; padding:20px; margin-bottom:24px; border:2px solid #FF6B00;">
+      <div style="font-size:13px; color:#64748b; font-weight:600; margin-bottom:4px; font-family:'Poppins',sans-serif;">Por apenas</div>
+      <div style="font-size:52px; font-weight:900; color:#00C896; letter-spacing:-0.04em; line-height:1; font-family:'Poppins',sans-serif;">R$17,90</div>
+      <div style="font-size:12px; color:#64748b; font-weight:500; font-family:'Poppins',sans-serif;">pagamento único • acesso imediato</div>
+    </div>
+    <button onclick="if(typeof fbq!=='undefined'){fbq('track','InitiateCheckout');}window.location.href='https://www.ggcheckout.com/checkout/v5/DLODr7AdVWeNmyBuLFLh'" style="width:100%; background:#2ECC71; color:white; font-family:'Poppins',sans-serif; font-weight:900; font-size:16px; border:none; border-radius:999px; padding:18px; cursor:pointer; box-shadow:0 8px 24px rgba(46,204,113,0.35); transition:transform 0.2s; letter-spacing:-0.01em;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+      QUERO POR R$17,90 →
+    </button>
+    <p style="font-size:11px; color:#94a3b8; margin-top:12px; font-family:'Poppins',sans-serif;">🔒 Compra 100% segura • Garantia de 7 dias</p>
+    <a href="https://www.ggcheckout.com/checkout/v5/w9wsjuKhFMSdBNUQ5NMp" onclick="if(typeof fbq!=='undefined'){fbq('track','InitiateCheckout');}" style="display:block; margin-top:14px; font-size:12px; color:#94a3b8; font-family:'Poppins',sans-serif; text-decoration:underline; cursor:pointer;">NÃO, EU QUERO A OFERTA BÁSICA MESMO</a>
+  </div>
+</div>
+
+<script>
+  // FAQ Accordion
+  function toggleFaq(btn) {
+    // Sobe ate o h3, depois pega o proximo irmaо (div.faq-answer)
+    var h3 = btn.closest('h3');
+    var answer = h3 ? h3.nextElementSibling : null;
+    if (!answer) return;
+    var isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-answer').forEach(function(a){ a.classList.remove('open'); });
+    document.querySelectorAll('.faq-btn').forEach(function(b){
+      b.setAttribute('aria-expanded','false');
+      b.querySelector('svg').style.transform='rotate(0deg)';
+    });
+    if (!isOpen) {
+      answer.classList.add('open');
+      btn.setAttribute('aria-expanded','true');
+      btn.querySelector('svg').style.transform='rotate(180deg)';
+    }
+  }
+
+  // Popup ao clicar no Plano Básico
+  document.getElementById('btn-basico').addEventListener('click', function() {
+    if(typeof fbq !== 'undefined'){ fbq('track', 'InitiateCheckout'); }
+    document.getElementById('popup-overlay').style.display = 'flex';
+  });
+
+  // Link plano básico confirmado no popup
+
+
+  document.getElementById('popup-overlay').addEventListener('click', function(e) {
+    if (e.target === this) window.location.href='https://www.ggcheckout.com/checkout/v5/w9wsjuKhFMSdBNUQ5NMp';
+  });
+</script>
+
+
+<!-- NOTIFICAÇÕES DE VENDA -->
+<div id="sale-notification" style="position:fixed;bottom:20px;left:20px;z-index:9998;max-width:300px;display:none;">
+  <div style="background:white;border-radius:16px;padding:12px 16px;box-shadow:0 8px 32px rgba(0,0,0,0.15);display:flex;align-items:center;gap:12px;border-left:4px solid #2ECC71;animation:slideInLeft 0.4s ease;">
+
+    <div style="flex:1;min-width:0;">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:2px;">
+        <span style="font-size:11px;font-weight:700;color:#1e293b;font-family:'Poppins',sans-serif;" id="notif-name"></span>
+        <span style="font-size:9px;background:#DCFCE7;color:#00A859;padding:1px 6px;border-radius:999px;font-weight:700;font-family:'Poppins',sans-serif;">✓ verificado</span>
+      </div>
+      <div style="font-size:11px;color:#475569;font-family:'Poppins',sans-serif;line-height:1.4;" id="notif-text"></div>
+      <div style="font-size:10px;color:#94a3b8;margin-top:3px;font-family:'Poppins',sans-serif;" id="notif-time"></div>
+    </div>
+    <button onclick="document.getElementById('sale-notification').style.display='none'" style="background:none;border:none;color:#94a3b8;font-size:16px;cursor:pointer;padding:0;line-height:1;flex-shrink:0;">✕</button>
+  </div>
+</div>
+
+<style>
+@keyframes slideInLeft{from{transform:translateX(-120%);opacity:0}to{transform:translateX(0);opacity:1}}
+@keyframes slideOutLeft{from{transform:translateX(0);opacity:1}to{transform:translateX(-120%);opacity:0}}
+</style>
+
+<script>
+(function(){
+  var sales = [
+    {name:"Mariana Souza",    emoji:"👩",  plan:"Plano Premium", time:"2 minutos atrás"},
+    {name:"Carlos Eduardo",   emoji:"👨",  plan:"Plano Premium", time:"5 minutos atrás"},
+    {name:"Ana Beatriz",      emoji:"👩‍🏫", plan:"Plano Premium", time:"8 minutos atrás"},
+    {name:"Fernanda Lima",    emoji:"👩",  plan:"Plano Básico",  time:"11 minutos atrás"},
+    {name:"Rafael Oliveira",  emoji:"👨‍💼", plan:"Plano Premium", time:"14 minutos atrás"},
+    {name:"Juliana Mendes",   emoji:"👩",  plan:"Plano Premium", time:"17 minutos atrás"},
+    {name:"Tiago Ferreira",   emoji:"👨",  plan:"Plano Básico",  time:"21 minutos atrás"},
+    {name:"Patrícia Costa",   emoji:"👩‍🎓", plan:"Plano Premium", time:"23 minutos atrás"},
+    {name:"Bruno Santos",     emoji:"👨",  plan:"Plano Premium", time:"26 minutos atrás"},
+    {name:"Camila Rodrigues", emoji:"👩",  plan:"Plano Premium", time:"30 minutos atrás"},
+    {name:"Letícia Alves",    emoji:"👩‍🏫", plan:"Plano Básico",  time:"33 minutos atrás"},
+    {name:"Diego Nascimento",  emoji:"👨", plan:"Plano Premium", time:"37 minutos atrás"},
+  ];
+
+  var idx = 0;
+  var notif = document.getElementById('sale-notification');
+  var inner = notif.querySelector('div');
+
+  function showNotification(){
+    var s = sales[idx % sales.length];
+    idx++;
+
+    document.getElementById('notif-name').textContent = s.name;
+    document.getElementById('notif-text').textContent = 'acaba de adquirir o ' + s.plan + ' 🎉';
+    document.getElementById('notif-time').textContent = '🕐 ' + s.time;
+
+    notif.style.display = 'block';
+    inner.style.animation = 'slideInLeft 0.4s ease';
+
+    setTimeout(function(){
+      inner.style.animation = 'slideOutLeft 0.4s ease forwards';
+      setTimeout(function(){
+        notif.style.display = 'none';
+        inner.style.animation = '';
+      }, 400);
+    }, 4500);
+  }
+
+  // Primeira notificação após 8s, depois a cada 18s
+  setTimeout(function(){
+    showNotification();
+    setInterval(showNotification, 14000);
+  }, 4000);
+})();
+</script>
+
+
+<!-- WhatsApp Floating Support Button -->
+<a href="https://wa.me/5548996364429?text=Estou%20com%20duvidas%20referente%20ao%20produto%20!!" target="_blank" id="wa-float"
+   style="position:fixed;bottom:24px;right:24px;z-index:9997;width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,.5);transition:transform .2s;text-decoration:none;"
+   onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
+   title="Falar com suporte">
+  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="white">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535 5.849L.057 23.547a.75.75 0 0 0 .921.916l5.85-1.488A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.943 0-3.759-.524-5.317-1.435l-.383-.225-3.471.883.897-3.388-.247-.4A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+  </svg>
+</a>
+<!-- Pulse ring -->
+<style>
+  #wa-float::after{content:'';position:absolute;width:100%;height:100%;border-radius:50%;border:3px solid #25D366;animation:waPulse 2s ease-out infinite;opacity:0;}
+  @keyframes waPulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.7);opacity:0}}
+</style>
+
+</body>
+</html>
